@@ -41,7 +41,7 @@
       '';
     plugins.conform-nvim = {
       enable = true;
-      format_on_save = ''
+      settings.format_on_save = ''
         function(bufnr)
           if vim.g.disable_autoformat or vim.b[bufnr].disable_autoformat then
             return
